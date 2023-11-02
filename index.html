@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href="styles/style.css">
+    <title>Hallow-Cat Website</title>
+  </head>
+
+  <body>
+    <nav>
+      <img class="nav_logo" src="" alt="">
+      <div class="links_nav">
+        <a href="#feat">What 'Hallow-Cat' does</a>
+        <a href="#q&a">How & why she was made</a>
+        <a href="#slides">Halloween slideshow</a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="text_bubble">
+        <h2>Introducing: Hallow-Cat | The greatest motivational companion!</h2>
+        <p>
+          Meet 'Hallow-Cat'; A little cat-bot created for professional procrastinators. Hallow-Cat helps you with waking up, as well as helping you out with your procrastination problems.
+          Set alarms to either wake up or use for deadlines, or put your phone in the handy phone-slot to keep your phone safely locked away so you genuinely focus on your work.
+          Hallow-Cat is fully customizable in terms of setting time. Whenever you want to wake up, or just set an alarm in general; she's your friend. It's extremely easy!
+        </p>
+      </div>
+      <img class="header_img" src="images/hallow_cat.jpg">
+    </header>
+
+    <main>
+      <section class="features" id="feat">
+        <h1>- Features -</h1>
+        <div class="our_features">
+          <article>
+            <div>
+              <img src="images/hallow_cat_2.jpg" class="feat_img">
+              <h3>Professional Alarm</h3>
+              <p>
+                Have trouble waking up? Put your phone on snooze too often when it rings? Hallow-Cat has got your back. It's simple; set the alarm, and when it goes off, she will make it her duty to whine till you get up and pick her up to take off her alarm.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div>
+              <img src="images/hallow_cat.jpg" class="feat_img">
+              <h3>Phone Thief</h3>
+              <p>
+                Next to being a fantastic alarm, Hallow-Cat also stores your phone safely in its phone-slot for whenever you're procrastinating. When sliding the phone into the phone-slot, she runs away with it. When you're done working, you can take it back out.  
+              </p>            
+            </div>
+          </article>
+          <article>
+            <div>
+              <img src="images/hallow_cat_3.jpg" class="feat_img">
+              <h3>Customizable</h3>
+              <p>
+                Hallow-Cat is fully customizable in terms of setting time. Whenever you wanna wake up, or just set an alarm in general; she's your friend. It's extremely easy! Need to wake up for school or work, Hallow-Cat's got you covered. Setting a deadline? Done.
+              </p>            
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="question_section" id="q&a">
+        <div class="text_bubble">
+          <h2>- How -</h2>
+          <p>
+            How we developed Hallow-Cat is very simple. First we interview our target audience to see what issues they're having and then from there, we develop our product.
+            Hallow-Cat was then created from a series of concept-art, using Circuit Playgrounds, various other bibs and bobs, and of course; the code powering the machine.
+          </p>
+        </div>
+        <div class="text_bubble">
+          <h2>- Why -</h2>
+          <p>
+            The reason why we developed Hallow-Cat is not only because we had a school project surrounding the subject-matter, but also the drive to create something that actually helps someone.
+            Through careful consideration and planning, this is our end product!
+          </p>
+        </div>
+      </section>
+      
+      <div class="slideshow" id="slides">
+        <h1>- Sildeshow -</h1>
+
+        <div class="w3-content w3-display-container">
+          <div class="w3-display-container mySlides">
+            <img src="images/concept_art.jpg" style="width:100%">
+          </div>
+
+          <div class="w3-display-container mySlides">
+            <img src="images/mindmap_cat.jpg" style="width:100%">
+          </div>
+          
+          <div class="w3-display-container mySlides">
+            <img src="images/prototype_casing_1.jpg" style="width:100%">
+          </div>
+          
+          <div class="w3-display-container mySlides">
+            <img src="images/prototype_casing_2.jpg" style="width:100%">
+          </div>
+          
+          <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>  
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright © CMGT CLE 1 - Team 27</p>
+    </footer>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+    </script>
+  </body> 
+</html>
